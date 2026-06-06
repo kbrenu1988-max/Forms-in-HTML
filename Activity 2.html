@@ -1,25 +1,27 @@
 <html>
     <head>
-        <title>relit</title>
+        <title>replit</title>
     </head>
     <body>
-        <fieldset>
-            <legend><b>Enter your marks</b></legend>
-            <form action="/action_page.php" oninput="x.value= (parseInt(m1.value)+parseInt(m2.value)+parseInt(m3.value))/3"></form>
-            <label>Name</label><br>
-            <input type="text" id="name"><br><br>
-            <label>Enter Marks</label><br>
-            <select name="subject" id="subject">
-                <option value="Maths">Maths</option>
-                <option value="English">English</option>
-                <option value="Science">Science</option>
-            </select>
-             <input type="number" id="m1" name="m1"><br><br>
-             <select name="subject2" id="subject2">
-                <option value="Maths">Maths</option>
-                <option value="English">English</option>
-                <option value="Science">Science</option>
-             </select>
-        </fieldset>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <br><br>
+                <label>Email:</label>
+                <input type="text" id="email">
+                <br><br>
+                <label>Gender</label>
+                <br>
+                <input type="radio" name="gender" value="Male">Male
+                <br>
+                <input type="radio" name="gender" value="Female">Female
+                <br><br>
+                <label>Birthday:</label>
+                <input type="date" id="Birthday" name="Birthday">
+                <br><br>
+            </fieldset>
+        </form>
     </body>
 </html>
